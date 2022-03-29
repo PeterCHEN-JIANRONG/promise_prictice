@@ -3,7 +3,7 @@
 const api = 'https://raw.githubusercontent.com/hexschool/2021-ui-frontend-job/master/frontend_data.json'
 
 const axios = {
-  get: function(url) {
+  get(url) {
     return new Promise((resolve, reject)=>{
       const xhr = new XMLHttpRequest();
       xhr.open("GET", url);
