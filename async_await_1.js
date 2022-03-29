@@ -31,8 +31,10 @@ const checkReward = ( data ) => {
 }
 
 // async、await
+// async 非同步 function
 const init = async function(){
   try{
+    // await 等待
     const score = await correctTest('peter');
     const reward = await checkReward(score);
     console.log(reward);
